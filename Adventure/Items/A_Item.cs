@@ -95,6 +95,7 @@ namespace Adventure.Items
             if (hero.gold >= price)
             {
                 hero.inv_items.Add(item);
+                findid(hero);
                 return true;
             }
             return false;
@@ -173,6 +174,15 @@ namespace Adventure.Items
             }
             hero.gold += price;
             dell(hero.inv_items, item.id);
+            findid(hero);
+        }
+
+        public static void findid(C_Hero h)
+        {
+            for (int i = 0; i < h.inv_items.Count; ++i)
+            {
+                h.inv_items[i].id = i + 1;
+            }
         }
 
     }
