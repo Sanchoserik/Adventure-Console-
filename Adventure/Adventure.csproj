@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="C_Hero.cs" />
     <Compile Include="Effects\A_Effect.cs" />
+    <Compile Include="Effects\regHP.cs" />
     <Compile Include="Items\A_Card.cs" />
     <Compile Include="Items\A_Item.cs" />
     <Compile Include="Items\A_Talisman.cs" />

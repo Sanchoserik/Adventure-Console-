@@ -120,6 +120,7 @@ namespace Adventure.Items
             {
                 hero.inv_talismans.Add(talisman);
                 findId(hero);
+                hero.gold -= price;
                 return true;
             }
             return false;

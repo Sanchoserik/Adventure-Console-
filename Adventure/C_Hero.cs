@@ -30,6 +30,10 @@ namespace Adventure
 
         public int gold;
 
+        public int strength;
+        public int endurance;
+        public int knowledge;
+        public int charisma;
 
         // invertory
         public List<A_Item> inv_items;

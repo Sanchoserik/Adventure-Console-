@@ -96,6 +96,7 @@ namespace Adventure.Items
             {
                 hero.inv_items.Add(item);
                 findid(hero);
+                hero.gold -= price;
                 return true;
             }
             return false;
@@ -185,5 +186,14 @@ namespace Adventure.Items
             }
         }
 
+        protected int returnFreeId(C_Hero h)
+        {
+            if (h.inv_items.Count != 0)
+            {
+                return h.inv_items.Count;
+            }
+            else
+                return 1;
+        }
     }
 }
