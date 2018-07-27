@@ -6,25 +6,22 @@ using System.Threading.Tasks;
 
 namespace Adventure.Effects
 {
-    //hp regeneration
-    class regHP : A_Effect
+    class airUp : A_Effect
     {
-        public int regValue;
+        public int upValue;
 
-        public regHP(int _val, int _time, C_Hero h)
+        public airUp(int _val, int _time, C_Hero h)
         {
-            regValue = _val;
+            upValue = _val;
             time = _time;
-            id = returnFreeId(h);           
+            id = returnFreeId(h);
         }
 
-        //add this to hero eff_stack
         public override void addToEffStack(C_Hero h)
         {
-            h.eff_stack.Add(this);
+            throw new NotImplementedException();
         }
 
-        //
         public override void addToEffStack()
         {
             throw new NotImplementedException();

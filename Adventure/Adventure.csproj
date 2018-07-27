@@ -43,8 +43,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="C_Hero.cs" />
+    <Compile Include="Effects\airUp.cs" />
     <Compile Include="Effects\A_Effect.cs" />
+    <Compile Include="Effects\darknessUp.cs" />
+    <Compile Include="Effects\deathUp.cs" />
+    <Compile Include="Effects\earthUp.cs" />
+    <Compile Include="Effects\fireUp.cs" />
+    <Compile Include="Effects\lifeUp.cs" />
+    <Compile Include="Effects\lightningUp.cs" />
+    <Compile Include="Effects\lightUp.cs" />
+    <Compile Include="Effects\physUp.cs" />
+    <Compile Include="Effects\regENE.cs" />
     <Compile Include="Effects\regHP.cs" />
+    <Compile Include="Effects\waterUp.cs" />
     <Compile Include="Items\A_Card.cs" />
     <Compile Include="Items\A_Item.cs" />
     <Compile Include="Items\A_Talisman.cs" />

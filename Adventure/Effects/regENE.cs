@@ -6,16 +6,15 @@ using System.Threading.Tasks;
 
 namespace Adventure.Effects
 {
-    //hp regeneration
-    class regHP : A_Effect
+    class regENE : A_Effect
     {
         public int regValue;
 
-        public regHP(int _val, int _time, C_Hero h)
+        public regENE(int _val, int _time, C_Hero h)
         {
             regValue = _val;
             time = _time;
-            id = returnFreeId(h);           
+            id = returnFreeId(h);
         }
 
         //add this to hero eff_stack
