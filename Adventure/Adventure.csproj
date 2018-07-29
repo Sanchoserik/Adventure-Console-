@@ -122,7 +122,7 @@
     <Compile Include="Items\Talismans\defDarkness1S.cs" />
     <Compile Include="Items\Talismans\defDarkness2M.cs" />
     <Compile Include="Items\Talismans\defDarkness3G.cs" />
-    <Compile Include="Items\Talismans\defDarknessU.cs" />
+    <Compile Include="Items\Talismans\defDarkness4U.cs" />
     <Compile Include="Items\Talismans\defDeath1S.cs" />
     <Compile Include="Items\Talismans\defDeath2M.cs" />
     <Compile Include="Items\Talismans\defDeath3G.cs" />

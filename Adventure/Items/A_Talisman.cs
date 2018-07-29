@@ -11,9 +11,15 @@ namespace Adventure.Items
         public int id;
         public string name;
 
-        int currEne;
-        int maxEne;
-        string element;
+        public int currEne;
+        public int maxEne;
+        public string element;
+
+        // maxEne values
+        protected int sEne = 250;
+        protected int mEne = 1000;
+        protected int gEne = 3000;
+        protected int uEne = 6000;
 
         //move from inv to tInUSe
         public static void moveToOrder(C_Hero h, int pos, A_Talisman t)

@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Adventure.Items.Talismans
 {
-    class defLightning1S
+    class defLightning1S : A_Talisman
     {
+        public defLightning1S(string _name)
+        {
+            maxEne = sEne;
+            element = "lightning";
+            currEne = maxEne;
+        }
     }
 }

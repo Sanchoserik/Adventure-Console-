@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Adventure.Items.Talismans
 {
-    class defAir3G
+    class defAir3G : A_Talisman
     {
+        public defAir3G(string _name)
+        {
+            maxEne = gEne;
+            element = "air";
+            currEne = maxEne;
+        }
     }
 }

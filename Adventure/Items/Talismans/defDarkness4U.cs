@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Adventure.Items.Talismans
 {
-    class defAir1S : A_Talisman
+    class defDarkness4U : A_Talisman
     {
-        public defAir1S(string _name)
+        public defDarkness4U(string _name)
         {
-            maxEne = sEne;
-            element = "air";
+            maxEne = uEne;
+            element = "darkness";
             currEne = maxEne;
         }
     }

@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Adventure.Items.Talismans
 {
-    class defDeath1S
+    class defDeath1S : A_Talisman
     {
+        public defDeath1S(string _name)
+        {
+            maxEne = sEne ;
+            element = "death";
+            currEne = maxEne;
+        }
     }
 }

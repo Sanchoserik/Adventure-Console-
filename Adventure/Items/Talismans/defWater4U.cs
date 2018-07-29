@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Adventure.Items.Talismans
 {
-    class defWater4U
+    class defWater4U : A_Talisman
     {
+        public defWater4U(string _name)
+        {
+            maxEne = uEne;
+            element = "water";
+            currEne = maxEne;
+        }
     }
 }

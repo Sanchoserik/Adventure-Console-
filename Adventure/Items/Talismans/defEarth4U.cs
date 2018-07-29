@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Adventure.Items.Talismans
 {
-    class defEarth4U
+    class defEarth4U : A_Talisman
     {
+        public defEarth4U(string _name)
+        {
+            maxEne = uEne;
+            element = "earth";
+            currEne = maxEne;
+        }
     }
 }
