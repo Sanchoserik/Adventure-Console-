@@ -91,7 +91,6 @@ namespace Adventure.Items
 
             }
 
-
             if (hero.gold >= price)
             {
                 hero.inv_items.Add(item);
@@ -178,6 +177,7 @@ namespace Adventure.Items
             findid(hero);
         }
 
+        //id funcs
         public static void findid(C_Hero h)
         {
             for (int i = 0; i < h.inv_items.Count; ++i)

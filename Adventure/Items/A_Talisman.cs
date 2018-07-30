@@ -20,6 +20,16 @@ namespace Adventure.Items
         protected int mEne = 1000;
         protected int gEne = 3000;
         protected int uEne = 6000;
+        //sell prices
+        public int sS = 0;
+        public int sM = 0;
+        public int sG = 0;
+        public int sU = 0;
+        //buy prices
+        public int bS = 0;
+        public int bM = 0;
+        public int bG = 0;
+        public int bU = 0;
 
         //move from inv to tInUSe
         public static void moveToOrder(C_Hero h, int pos, A_Talisman t)
@@ -74,54 +84,18 @@ namespace Adventure.Items
         {
             int price = 0;
 
-            switch (talisman.GetType().Name)
+            string str = talisman.GetType().Name;
+            str = str.Substring(str.Length - 2, 2);
+
+            switch (str)
             {
-                case "defFire1S": price = 800; break;
-                case "defFire2M": price = 1600; break;
-                case "defFire3G": price = 3200; break;
-                case "defFire4U": price = 6400; break;
-
-                case "defAir1S": price = 800; break;
-                case "defAir2M": price = 1600; break;
-                case "defAir3G": price = 3200; break;
-                case "defAir4U": price = 6400; break;
-
-                case "defLightning1S": price = 800; break;
-                case "defLightning2M": price = 1600; break;
-                case "defLightning3G": price = 3200; break;
-                case "defLightning4U": price = 6400; break;
-
-                case "defEarth1S": price = 800; break;
-                case "defEarth2M": price = 1600; break;
-                case "defEarth3G": price = 3200; break;
-                case "defEarth4U": price = 6400; break;
-
-                case "defWater1S": price = 800; break;
-                case "defWater2M": price = 1600; break;
-                case "defWater3G": price = 3200; break;
-                case "defWater4U": price = 6400; break;
-
-                case "defDarkness1S": price = 800; break;
-                case "defDarkness2M": price = 1600; break;
-                case "defDarkness3G": price = 3200; break;
-                case "defDarkness4U": price = 6400; break;
-
-                case "defLight1S": price = 800; break;
-                case "defLight2M": price = 1600; break;
-                case "defLight3G": price = 3200; break;
-                case "defLight4U": price = 6400; break;
-
-                case "defLife1S": price = 800; break;
-                case "defLife2M": price = 1600; break;
-                case "defLife3G": price = 3200; break;
-                case "defLife4U": price = 6400; break;
-
-                case "defDeath1S": price = 800; break;
-                case "defDeath2M": price = 1600; break;
-                case "defDeath3G": price = 3200; break;
-                case "defDeath4U": price = 6400; break;
+                case "1S": price = 800; break;
+                case "2M": price = 1600; break;
+                case "3G": price = 3200; break;
+                case "4U": price = 6400; break;
 
             }
+            
             if (hero.gold >= price)
             {
                 hero.inv_talismans.Add(talisman);
@@ -135,52 +109,15 @@ namespace Adventure.Items
         {
             int price = 0;
 
-            switch (talisman.GetType().Name)
+            string str = talisman.GetType().Name;
+            str = str.Substring(str.Length - 2, 2);
+
+            switch (str)
             {
-                case "defFire1S": price = 200; break;
-                case "defFire2M": price = 400; break;
-                case "defFire3G": price = 800; break;
-                case "defFire4U": price = 1600; break;
-
-                case "defAir1S": price = 200; break;
-                case "defAir2M": price = 500; break;
-                case "defAir3G": price = 800; break;
-                case "defAir4U": price = 1600; break;
-
-                case "defLightning1S": price = 200; break;
-                case "defLightning2M": price = 400; break;
-                case "defLightning3G": price = 800; break;
-                case "defLightning4U": price = 1600; break;
-
-                case "defEarth1S": price = 200; break;
-                case "defEarth2M": price = 400; break;
-                case "defEarth3G": price = 800; break;
-                case "defEarth4U": price = 1600; break;
-
-                case "defWater1S": price = 200; break;
-                case "defWater2M": price = 400; break;
-                case "defWater3G": price = 800; break;
-                case "defWater4U": price = 1600; break;
-
-                case "defDarkness1S": price = 200; break;
-                case "defDarkness2M": price = 400; break;
-                case "defDarkness3G": price = 800; break;
-                case "defDarkness4U": price = 1600; break;
-
-                case "defLight1S": price = 200; break;
-                case "defLight2M": price = 400; break;
-                case "defLight3G": price = 800; break;
-                case "defLight4U": price = 1600; break;
-
-                case "defLife1S": price = 200; break;
-                case "defLife2M": price = 400; break;
-                case "defLife3G": price = 800; break;
-                case "defLife4U": price = 1600; break;
-
-                case "defDeath1S": price = 200; break;
-                case "defDeath2M": price = 400; break;
-                case "defDeath3G": price = 800; break;
-                case "defDeath4U": price = 1600; break;
+                case "1S": price = 200; break;
+                case "2M": price = 400; break;
+                case "3G": price = 800; break;
+                case "4U": price = 1600; break;
 
             }
 
@@ -189,6 +126,7 @@ namespace Adventure.Items
             findId(hero);
         }
 
+        //re charge talisman funcs
         public static int reChargePrice(A_Talisman t, int val)
         {
              return Convert.ToInt32(val * 1.8);
