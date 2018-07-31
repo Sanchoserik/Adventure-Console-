@@ -44,51 +44,20 @@ namespace Adventure.Items
                 case "eneReP3G": price = 2000; break;
                 case "eneReP4U": price = 4000; break;
 
-                case "fireUpMix1S": price = 300; break;
-                case "fireUpMix2M": price = 600; break;
-                case "fireUpMix3G": price = 900; break;
-                case "fireUpMix4U": price = 1800; break;
+            }
 
-                case "airUpMix1S": price = 300; break;
-                case "airUpMix2M": price = 600; break;
-                case "airUpMix3G": price = 900; break;
-                case "airUpMix4U": price = 1800; break;
+            if (price == 0)
+            {
+                string str = item.GetType().Name;
+                str = str.Substring(str.Length - 2, 2);
 
-                case "lightningUpMix1S": price = 300; break;
-                case "lightningUpMix2M": price = 600; break;
-                case "lightningUpMix3G": price = 900; break;
-                case "lightningUpMix4U": price = 1800; break;
-
-                case "earthUpMix1S": price = 300; break;
-                case "earthUpMix2M": price = 600; break;
-                case "earthUpMix3G": price = 900; break;
-                case "earthUpMix4U": price = 1800; break;
-
-                case "waterUpMix1S": price = 300; break;
-                case "waterUpMix2M": price = 600; break;
-                case "waterUpMix3G": price = 900; break;
-                case "waterUpMix4U": price = 1800; break;
-
-                case "darknessUpMix1S": price = 300; break;
-                case "darknessUpMix2M": price = 600; break;
-                case "darknessUpMix3G": price = 900; break;
-                case "darknessUpMix4U": price = 1800; break;
-
-                case "lightUpMix1S": price = 300; break;
-                case "lightUpMix2M": price = 600; break;
-                case "lightUpMix3G": price = 900; break;
-                case "lightUpMix4U": price = 1800; break;
-
-                case "lifeUpMix1S": price = 300; break;
-                case "lifeUpMix2M": price = 600; break;
-                case "lifeUpMix3G": price = 900; break;
-                case "lifeUpMix4U": price = 1800; break;
-
-                case "deathUpMix1S": price = 300; break;
-                case "deathUpMix2M": price = 600; break;
-                case "deathUpMix3G": price = 900; break;
-                case "deathUpMix4U": price = 1800; break;
-
+                switch (str)
+                {
+                    case "1S": price = 200; break;
+                    case "2M": price = 400; break;
+                    case "3G": price = 800; break;
+                    case "4U": price = 1600; break;
+                }
             }
 
             if (hero.gold >= price)
@@ -126,52 +95,22 @@ namespace Adventure.Items
                 case "eneReP3G": price = 500; break;
                 case "eneReP4U": price = 1000; break;
 
-                case "fireUpMix1S": price = 75; break;
-                case "fireUpMix2M": price = 150; break;
-                case "fireUpMix3G": price = 225; break;
-                case "fireUpMix4U": price = 450; break;
-
-                case "airUpMix1S": price = 75; break;
-                case "airUpMix2M": price = 150;break;
-                case "airUpMix3G": price = 225;break;
-                case "airUpMix4U": price = 450; break;
-
-                case "lightningUpMix1S": price = 75; break;
-                case "lightningUpMix2M": price = 150;break;
-                case "lightningUpMix3G": price = 225;break;
-                case "lightningUpMix4U": price = 450; break;
-
-                case "earthUpMix1S": price = 75; break;
-                case "earthUpMix2M": price = 150;break;
-                case "earthUpMix3G": price = 225;break;
-                case "earthUpMix4U": price = 450; break;
-
-                case "waterUpMix1S": price = 75;  break;
-                case "waterUpMix2M": price = 150; break;
-                case "waterUpMix3G": price = 225; break;
-                case "waterUpMix4U": price = 450; break;
-
-                case "darknessUpMix1S": price = 75; break;
-                case "darknessUpMix2M": price = 150;break;
-                case "darknessUpMix3G": price = 225;break;
-                case "darknessUpMix4U": price = 450; break;
-
-                case "lightUpMix1S": price = 75; break;
-                case "lightUpMix2M": price = 150;break;
-                case "lightUpMix3G": price = 225;break;
-                case "lightUpMix4U": price = 450; break;
-
-                case "lifeUpMix1S": price = 75; break;
-                case "lifeUpMix2M": price = 150;break;
-                case "lifeUpMix3G": price = 225;break;
-                case "lifeUpMix4U": price = 450; break;
-
-                case "deathUpMix1S": price = 75; break;
-                case "deathUpMix2M": price = 150;break;
-                case "deathUpMix3G": price = 225;break;
-                case "deathUpMix4U": price = 450; break;
-
             }
+
+            if (price == 0)
+            {
+                string str = item.GetType().Name;
+                str = str.Substring(str.Length - 2, 2);
+
+                switch (str)
+                {
+                    case "1S": price = 200; break;
+                    case "2M": price = 400; break;
+                    case "3G": price = 800; break;
+                    case "4U": price = 1600; break;
+                }
+            }
+
             hero.gold += price;
             dell(hero.inv_items, item.id);
             findid(hero);
@@ -184,6 +123,7 @@ namespace Adventure.Items
             {
                 h.inv_items[i].id = i + 1;
             }
+            
         }
 
         protected int returnFreeId(C_Hero h)
