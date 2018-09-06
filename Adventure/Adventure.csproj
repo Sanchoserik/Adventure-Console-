@@ -151,8 +151,10 @@
     <Compile Include="Items\Talismans\defWater2M.cs" />
     <Compile Include="Items\Talismans\defWater3G.cs" />
     <Compile Include="Items\Talismans\defWater4U.cs" />
+    <Compile Include="Monsters\C_Monster.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Skills\A_Skill.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
