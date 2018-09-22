@@ -75,14 +75,14 @@ namespace Adventure
         public int pbonusAP;
         //bonus def from params
         public int pbonusFireDef;
-         public int pbonusAirDef;
-         public int pbonusLightningDef;
-         public int pbonusEarthDef;
-         public int pbonusWaterDef;
-         public int pbonusLifeDef;
-         public int pbonusDeathDef;
-         public int pbonusLightDef;
-         public int pbonusDarknessDef;
+        public int pbonusAirDef;
+        public int pbonusLightningDef;
+        public int pbonusEarthDef;
+        public int pbonusWaterDef;
+        public int pbonusLifeDef;
+        public int pbonusDeathDef;
+        public int pbonusLightDef;
+        public int pbonusDarknessDef;
         //
 
         //AP - action Points

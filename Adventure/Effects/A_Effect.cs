@@ -11,8 +11,6 @@ namespace Adventure.Effects
         public int id;
         public int time;
 
-      
-       
         //add concrette eff to stack in hero 
         public abstract void addToEffStack(C_Hero h);
 

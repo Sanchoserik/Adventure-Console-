@@ -7,11 +7,15 @@ using Adventure.Monsters;
 
 namespace Adventure.Skills
 {
-    abstract class A_Skill
+    public abstract class A_Skill
     {
-        int flag;
+       public int flag;
+       public string dataFileName;
+       public dataFileReader dfReader;
 
-        public abstract void basicattackskiill(C_Hero caster, List<C_Monster> targets);
+       public int APcost;
+       public int levels;
 
+     
     }
 }
