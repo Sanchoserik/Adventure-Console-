@@ -7,13 +7,13 @@ using Adventure.Skills.ActionScripts;
 
 namespace Adventure.Skills.Tactics
 {
-    class st_TacticalSwap : A_Skill
-    {        
-        a_TacticalSwapScript script = new a_TacticalSwapScript();
+    public class st_Retreat : A_Skill
+    {
+        a_RetreatScript script = new a_RetreatScript();
 
-        public st_TacticalSwap()
+        public st_Retreat()
         {
-            flag = 1;
+            flag = 2;
             levels = 1;
             dfReader = null;
         }
@@ -22,8 +22,7 @@ namespace Adventure.Skills.Tactics
         {
             // call script 
             script.callScript(user);
-            
-        }
 
+        }
     }
 }

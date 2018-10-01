@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Adventure.Items
 {
-    abstract class A_Talisman
+    public abstract class A_Talisman
     {
         public int id;
         public string name;

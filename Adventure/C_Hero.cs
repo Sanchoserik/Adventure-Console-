@@ -8,7 +8,7 @@ using Adventure.Effects;
 
 namespace Adventure
 {
-    class C_Hero
+    public class C_Hero
     {
         public int baseMaxHP; // base max
         public int maxHP; // all max
