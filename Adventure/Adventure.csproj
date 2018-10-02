@@ -156,11 +156,17 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ScriptHelper\ScriptHelper.cs" />
     <Compile Include="Skills\ActionScripts\A_AScript.cs" />
+    <Compile Include="Skills\ActionScripts\a_CounterAnalysisScript.cs" />
+    <Compile Include="Skills\ActionScripts\a_RechargeScript.cs" />
     <Compile Include="Skills\ActionScripts\a_RetreatScript.cs" />
+    <Compile Include="Skills\ActionScripts\a_TacticalPreparationScript.cs" />
     <Compile Include="Skills\ActionScripts\a_TacticalSwapScript.cs" />
     <Compile Include="Skills\A_Skill.cs" />
     <Compile Include="Skills\dataFileReader.cs" />
+    <Compile Include="Skills\Tactics\st_CounterAnalysis.cs" />
+    <Compile Include="Skills\Tactics\st_Recharge.cs" />
     <Compile Include="Skills\Tactics\st_Retreat.cs" />
+    <Compile Include="Skills\Tactics\st_TacticalPreparation.cs" />
     <Compile Include="Skills\Tactics\st_TacticalSwap.cs" />
   </ItemGroup>
   <ItemGroup>
