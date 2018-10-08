@@ -157,6 +157,10 @@
     <Compile Include="ScriptHelper\ScriptHelper.cs" />
     <Compile Include="Skills\ActionScripts\A_AScript.cs" />
     <Compile Include="Skills\ActionScripts\a_CounterAnalysisScript.cs" />
+    <Compile Include="Skills\ActionScripts\a_CriticalBalanceScript.cs" />
+    <Compile Include="Skills\ActionScripts\a_DestructionScript.cs" />
+    <Compile Include="Skills\ActionScripts\a_IronDefenceScript.cs" />
+    <Compile Include="Skills\ActionScripts\a_OverchargeScript.cs" />
     <Compile Include="Skills\ActionScripts\a_RechargeScript.cs" />
     <Compile Include="Skills\ActionScripts\a_RetreatScript.cs" />
     <Compile Include="Skills\ActionScripts\a_TacticalPreparationScript.cs" />
@@ -164,6 +168,10 @@
     <Compile Include="Skills\A_Skill.cs" />
     <Compile Include="Skills\dataFileReader.cs" />
     <Compile Include="Skills\Tactics\st_CounterAnalysis.cs" />
+    <Compile Include="Skills\Tactics\st_CriticalBalance.cs" />
+    <Compile Include="Skills\Tactics\st_Destruction.cs" />
+    <Compile Include="Skills\Tactics\st_IronDefence.cs" />
+    <Compile Include="Skills\Tactics\st_Overcharge.cs" />
     <Compile Include="Skills\Tactics\st_Recharge.cs" />
     <Compile Include="Skills\Tactics\st_Retreat.cs" />
     <Compile Include="Skills\Tactics\st_TacticalPreparation.cs" />
